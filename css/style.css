@@ -1,0 +1,435 @@
+/* Weas Potentes */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Weas Potentes */
+
+/* Globales */
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "PT-Sans", sans-serif;
+  font-weight: bold;
+  color: var(--negro-claro);
+}
+
+p {
+  font-size: 2rem;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: "Open-Sans", sans-serif;
+}
+
+img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 0.2rem;
+}
+
+/* Globales */
+
+/* Utilidades */
+
+.centrar-texto {
+  text-align: center;
+}
+
+.centrar-imagen {
+  text-align: center;
+  margin: auto;
+}
+
+.separar {
+  margin: 2rem 0 2rem 0;
+}
+
+/* Utilidades */
+
+/* Variables */
+
+:root {
+  --blanco: #ffffff;
+  --negro-claro: #141313;
+  --marron-claro: #7a4f3b;
+  --gris: #e1e1e1;
+}
+
+/* Variables */
+
+/* Navegacion & Header */
+
+header {
+  background-image: url(../img/gb-nav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 55rem;
+}
+
+.header__texto h2,
+.header__texto p {
+  color: var(--blanco);
+}
+
+.header__texto p {
+  font-style: italic;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.contenedor__flex {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contenedor__titulo a {
+  color: var(--blanco);
+  font-size: 5rem;
+}
+
+.contenedor__titulo span {
+  font-weight: bold;
+}
+
+.contenedor__navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.navegacion__enlace {
+  color: var(--blanco);
+  font-size: 2rem;
+}
+
+/* Navegacion & Header */
+
+/* Footer */
+
+footer {
+  background-color: var(--negro-claro);
+}
+
+/* Footer */
+
+/* INDEX */
+
+.test {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contenido-principal {
+  flex: 2 0 0;
+}
+
+aside {
+  grid-column: 2/3;
+}
+
+.side {
+  margin-bottom: 2rem;
+}
+
+.side__informacion-parrafo {
+  margin: 1rem 0;
+}
+
+/* BOTON */
+
+.boton {
+  font-size: 1.8rem;
+  color: var(--blanco);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+}
+
+.boton-principal {
+  background-color: var(--negro-claro);
+}
+
+.boton-secundario {
+  background-color: var(--marron-claro);
+}
+
+.boton-principal,
+.boton-secundario {
+  border-radius: 1rem;
+}
+
+/* BOTON */
+
+/* RECETA */
+
+.receta {
+  width: auto;
+  margin-bottom: 30px;
+}
+
+.container-receta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* RECETA */
+
+/* FORMULARIO */
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+
+.formulario__campo {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.campo__input {
+  flex: 1;
+  border: 1px solid var(--gris);
+}
+
+/* FORMULARIO */
+
+/* BLOG */
+.pastor {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.pastor__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pastor__informacion {
+  grid-column: 2/3;
+}
+
+.etiopia {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.etiopia__img {
+  grid-column: 2/3;
+  width: 100%;
+}
+
+.etiopia__img img {
+  object-fit: cover;
+}
+
+.etiopia__informacion {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.globalizacion {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.globalizacion__img {
+  grid-column: 2/3;
+}
+
+.globalizacion__informacion {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.infusion {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.infusion__img {
+  grid-column: 1/2;
+}
+
+/* BLOG */
+
+/* CURSO */
+.cursos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+/* CURSO */
+
+/* MODIFICACION BOOSTRAP*/
+
+.nav-link,
+.nav-logo {
+  color: var(--blanco);
+  font-size: 2rem;
+}
+
+.nav-logo:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.navbar-footer {
+  display: flex;
+}
+
+.navbar-light .navbar-toggler-icon {
+  border-radius: 2px;
+}
+
+.container-fluid {
+  margin-top: 1.5rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.navbar-nav > li > a:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.navbar-brand h1 {
+  font-size: 5rem;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+/* MODIFICACION BOOSTRAP*/
+
+/* MEDIA SCREEN*/
+
+@media (max-width: 992px) {
+  .boton-principal,
+  .boton-secundario {
+    display: block;
+  }
+  .test {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "top top top"
+      "mid mid mid";
+  }
+  .contenido-principal {
+    grid-area: top / 1 / span 2 / span 3;
+  }
+  .division {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .division--contenido {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .ubicacion__img {
+    grid-area: 1 / 1 / 2 /3;
+  }
+  .ubicacion__inf {
+    grid-area: 2 / 2 / 3 /3;
+  }
+
+  .aside-mq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .side {
+    border: solid var(--gris) 0.5px;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .tablet {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .tablet-contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .tablet__informacion {
+    height: 2rem; /* Medio y no funka pero cumple la idea de reducirlo en lo maximo posible*/
+  }
+
+  .tablet__informacion--parrafo {
+    grid-area: 2/1/3/3;
+  }
+
+  .container-receta {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .aside-mq {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "top top top"
+      "mid mid mid";
+  }
+  .interes-mq {
+    grid-area: top / 1 / span 2 / span 3;
+  }
+}
+
+/* MEDIA SCREEN*/
