@@ -59,6 +59,28 @@ img {
 }
 /* Utilidades */
 
+/* Animacion */
+.navbar-nav li {
+  position: relative;
+}
+
+.navbar-nav li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav li:hover::after {
+  width: 100%;
+}
+
+/* Animacion */
+
 /* Navegacion & Header */
 
 header {
@@ -106,12 +128,13 @@ header {
   span {
     font-weight: bold;
   }
-  .nav-link {
-    font-size: 2rem;
-  }
 }
 
 /* Navegacion & Header */
+
+/* Animacioin de Links*/
+
+/* Animacioin de Links*/
 
 /* Footer */
 footer {
@@ -288,6 +311,7 @@ footer {
   margin-top: 1.5rem;
   .nav-link {
     color: $blanco;
+    font-size: 2rem;
   }
 }
 
